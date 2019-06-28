@@ -1,0 +1,50 @@
+{
+	"name": "minishift-rspprovider-sample",
+	"displayName": "minishift-rspprovider-sample",
+	"description": "Minishift RSP Provider example for Server Connector",
+	"version": "0.0.1",
+	"publisher": "redhat",
+	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:servers"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"package": "node ./build/package.js",
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p ./",
+		"watch": "tsc -watch -p ./",
+		"build": "npm run compile && npm run package"
+	},
+	"devDependencies": {
+		"@types/find-java-home": "^0.2.0",
+		"@types/node": "^8.10.25",
+		"@types/path-exists": "^3.0.0",
+		"@types/vscode": "^1.34.0",
+		"@types/wait-on": "^3.2.0",
+		"decompress": "^4.2.0",
+		"download": "^7.1.0",
+		"tslint": "^5.18.0",
+		"typescript": "^3.5.1",
+		"vscode": "^1.1.33"
+	},
+	"dependencies": {
+		"diff": "^4.0.1",
+		"events": "^3.0.0",
+		"expand-home-dir": "0.0.3",
+		"find-java-home": "^0.2.0",
+		"fs-extra": "7.0.0",
+		"path-exists": "^3.0.0",
+		"portfinder": "^1.0.20",
+		"vsce": "^1.64.0",
+		"vscode-server-connector-api": "file:../../redhat-developer/vscode-server-connector-api",
+		"wait-on": "^3.0.1"
+	}
+}
