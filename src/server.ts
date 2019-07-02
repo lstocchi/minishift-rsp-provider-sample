@@ -11,7 +11,7 @@ import * as portfinder from 'portfinder';
 import * as requirements from './requirements';
 import * as vscode from 'vscode';
 import * as waitOn from 'wait-on';
-import { ServerInfo } from 'vscode-server-connector-api/out/util/types';
+import { ServerInfo } from 'vscode-server-connector-api';
 
 let cpProcess: cp.ChildProcess;
 let javaHome: string;

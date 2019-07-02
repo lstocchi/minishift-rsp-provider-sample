@@ -44,7 +44,7 @@
 		"path-exists": "^3.0.0",
 		"portfinder": "^1.0.20",
 		"vsce": "^1.64.0",
-		"vscode-server-connector-api": "file:../../redhat-developer/vscode-server-connector-api",
+		"vscode-server-connector-api": "0.1.1",
 		"wait-on": "^3.0.1"
 	}
 }
